@@ -1,0 +1,23 @@
+.DS_Store
+Thumbs.db
+
+# 所有临时
+node_modules
+sea-modules
+static/*/dist
+static/**/src/*.js
+
+# 编译目录
+dist
+build
+
+.project
+.classpath
+.settings/
+*.iml
+*.ipr
+*.iws
+.idea
+*.out
+# java
+target/
