@@ -12,4 +12,11 @@
     <artifactId>changcheng-admin</artifactId>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>site.changcheng</groupId>
+            <artifactId>changcheng-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
 </project>
