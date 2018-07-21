@@ -1,3 +1,9 @@
+# 添加善良的法律的撒
+# 添加善良的法律的撒
+# 添加善良的法律的撒
+# 添加善良的法律的撒
+# 添加善良的法律的撒
+# 添加善良的法律的撒
 .DS_Store
 Thumbs.db
 
@@ -6,7 +12,7 @@ node_modules
 sea-modules
 static/*/dist
 static/**/src/*.js
-
+# 添加善良的法律的撒
 # 编译目录
 dist
 build
