@@ -1,0 +1,25 @@
+#main-wrapper{
+    background-image:url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.login-box{
+    border-right-style:solid;
+    border-right-color: #dadad8;
+    /*background-image: url(../images/noise.png);*/
+}
+h4 {
+    font-family: 'CopseRegular', CopseRegular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    height: 29px;
+    line-height: 32px;
+    font-weight: normal;
+    text-shadow: 1px 1px 0px #e1e1e1;
+    position: relative;
+}
+label {
+    clear: both;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.7);
+}
