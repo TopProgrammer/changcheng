@@ -19,9 +19,9 @@ spring:
       force: true
   datasource:
     name: datasource
-    url: jdbc:mysql://114.115.202.225:3306/saas_test?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF8&autoReconnect=true
-    username: saas_test
-    password: saas_test123HW
+    url: jdbc:mysql://47.95.236.75:3306/saas_test?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF8&autoReconnect=true
+    username: root
+    password: 12345678
     max-active: 2
     max-idle: 2
     min-idle: 2
