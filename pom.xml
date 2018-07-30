@@ -32,6 +32,16 @@
     <name>changcheng</name>
     <url>http://www.changcheng.site</url>
 
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <url>http://mvn.changcheng.site/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://mvn.changcheng.site/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 <!--    <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
@@ -61,7 +71,7 @@
             <dependency>
                 <groupId>site.changcheng</groupId>
                 <artifactId>changcheng-common</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>1.0.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -85,18 +95,7 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.3.2</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-config-server</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-config</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-zookeeper-config</artifactId>-->
-        <!--</dependency>-->
+
 
         <dependency>
             <groupId>mysql</groupId>
@@ -119,15 +118,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 
 </project>

@@ -4,7 +4,7 @@
 <generatorConfiguration>
 	<!-- classPathEntry:数据库的JDBC驱动,换成你自己的驱动位置 -->
 	<classPathEntry
-		location="/Users/uworks/.m2/repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar" />
+		location="C:\Users\changcheng\.m2\repository\mysql\mysql-connector-java\5.1.46\mysql-connector-java-5.1.46.jar" />
 		<context id="mysql2Tables" targetRuntime="MyBatis3">
 		<property name="javaFileEncoding" value="UTF-8" />
 		<!-- 去除自动生成的注释 -->
@@ -21,20 +21,20 @@
 		</javaTypeResolver>
 		<!-- 实体类的位置 -->
 		<javaModelGenerator targetPackage="site.changcheng.admin.dao.entity"
-			targetProject="changcheng-admin">
+			targetProject="src\main\java">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 		<!-- 实体类xml映射文件的位置 -->
 		<sqlMapGenerator targetPackage="mapper"
-			targetProject="changcheng-admin\src\main\resources">
+			targetProject="src\main\resources">
 			<!--windows targetProject="java-zbj-user-dubbo\src\main\resources"> -->
 			<!--Mac targetProject="java-zbj-user-dubbo/src/main/resources"> -->
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 		<!-- DAOMapper的位置 -->
 		<javaClientGenerator type="MAPPER"
-			targetPackage="site.changcheng.admin.dao.mapper" targetProject="changcheng-admin">
+			targetPackage="site.changcheng.admin.dao.mapper" targetProject="src\main\java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 		<!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 -->
