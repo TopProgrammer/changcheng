@@ -1,7 +1,5 @@
 package site.changcheng.admin.Service.impl;
 
-import site.changcheng.common.util.HttpUtils;
-import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Service;
 import site.changcheng.admin.Service.SSOService;
 import site.changcheng.admin.web.request.LoginForm;
@@ -26,7 +24,7 @@ public class SSOServiceImpl implements SSOService {
 
   public void connectedSSO(LoginForm form) throws Exception {
     String url = "http://127.0.0.1:7000/user/login";
-    String str = JSONObject.toJSONString(form);
-    HttpUtils.doPostForm(url,str,"");
+//    String str = JSONObject.toJSONString(form);
+//    HttpUtils.doPostForm(url,str,"");
   }
 }

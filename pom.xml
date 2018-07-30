@@ -13,6 +13,7 @@
         <module>changcheng-admin</module>
         <module>changcheng-sso</module>
         <module>changcheng-quartz</module>
+        <module>changcheng-plugin</module>
     </modules>
 
     <parent>
