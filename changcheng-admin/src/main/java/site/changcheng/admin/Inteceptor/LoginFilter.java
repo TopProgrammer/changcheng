@@ -10,29 +10,28 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-@WebFilter
-@Component
+//@WebFilter
+//@Component
 public class LoginFilter  implements Filter {
+
   private Logger LOG = LoggerFactory.getLogger(getClass());
   @Override public void init(FilterConfig filterConfig) throws ServletException {
-
-
     LOG.info("======登录过滤器初始化=======");
   }
 
   @Override public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException,
       ServletException {
-    HttpServletRequest req = (HttpServletRequest) request;
-    HttpServletResponse res = (HttpServletResponse) response;
-    HttpSession session = req.getSession();
-    LOG.info("====登录过滤器拦截处理中======");
-    Boolean isLogin = (Boolean) session.getAttribute("isLogin");
-    if (isLogin!=null&&isLogin) {
-      chain.doFilter(request, response);
-      return;
-    }
+//    HttpServletRequest req = (HttpServletRequest) request;
+//    HttpServletResponse res = (HttpServletResponse) response;
+//    HttpSession session = req.getSession();
+//    LOG.info("====登录过滤器拦截处理中======");
+//    Boolean isLogin = (Boolean) session.getAttribute("isLogin");
+//    if (isLogin!=null&&isLogin) {
+//      chain.doFilter(request, response);
+//      return;
+//    }
     //跳转至sso认证中心
-    res.sendRedirect("sso-server-url-with-system-url");
+//    res.sendRedirect("swagger-ui.html");
   }
 
   @Override public void destroy() {

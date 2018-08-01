@@ -53,4 +53,10 @@ session:
       - "/"
       - "/error"
       - "/login"
+      - "/swagger-ui.html"
+      - "/configuration/**"
+      - "/swagger-resources"
+      - "/api-docs/**"
+      - "/v2/api-docs/**"
+
 debug: true

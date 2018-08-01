@@ -1,5 +1,8 @@
 package site.changcheng.admin.web.request;
 
+import io.swagger.annotations.ApiModel;
+
+@ApiModel("登陆实体bean")
 public class LoginForm {
   private String username;
   private String password;
