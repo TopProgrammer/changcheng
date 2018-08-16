@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<!-- classPathEntry:数据库的JDBC驱动,换成你自己的驱动位置 -->
+	<classPathEntry
+		location="C:\Users\changcheng\.m2\repository\mysql\mysql-connector-java\5.1.46\mysql-connector-java-5.1.46.jar" />
+		<context id="mysql2Tables" targetRuntime="MyBatis3">
+		<property name="javaFileEncoding" value="UTF-8" />
+		<!-- 去除自动生成的注释 -->
+		<commentGenerator type="site.changcheng.common.mbg.ChangchengCommentGenerator">
+			<property name="suppressDate" value="true" />
+			<property name="suppressAllComments" value="false" />
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://47.95.236.75:3306/changcheng"
+			userId="root" password="12345678">
+		</jdbcConnection>
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		<!-- 实体类的位置 -->
+		<javaModelGenerator targetPackage="site.changcheng.sso.dao.entity"
+			targetProject="src\main\java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<!-- 实体类xml映射文件的位置 -->
+		<sqlMapGenerator targetPackage="mapper"
+			targetProject="src\main\resources">
+			<!--windows targetProject="java-zbj-user-dubbo\src\main\resources"> -->
+			<!--Mac targetProject="java-zbj-user-dubbo/src/main/resources"> -->
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<!-- DAOMapper的位置 -->
+		<javaClientGenerator type="MAPPER"
+			targetPackage="site.changcheng.sso.dao.mapper" targetProject="src\main\java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+		<!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 -->
+		<table tableName="t_user" domainObjectName="User"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" enableInsert="true"
+			enableUpdateByPrimaryKey="true"
+			enableDeleteByPrimaryKey="true"/>
+
+		<table tableName="t_label" domainObjectName="Label"
+			   enableCountByExample="false" enableUpdateByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   selectByExampleQueryId="false" enableInsert="true"
+			   enableUpdateByPrimaryKey="true"
+			   enableDeleteByPrimaryKey="true"/>
+		<!-- 过滤字段 V1.0.1新加的字段，V1.0.0版本不用
+		  <ignoreColumn column="type"/>	
+		  <ignoreColumn column="version"/>	
+	  	-->
+	</context>
+</generatorConfiguration>

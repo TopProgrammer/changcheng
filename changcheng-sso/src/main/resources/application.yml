@@ -56,7 +56,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapping/*.xml
-  type-aliases-package: site.changcheng.sso.entity
+  type-aliases-package: site.changcheng.sso.dao.entity
 #pagehelper分页插件
 pagehelper:
     helperDialect: mysql
