@@ -22,7 +22,7 @@
  * http://golang.org/doc/go_spec.html#Lexical_elements
  * <p>
  * Go uses a minimal style for highlighting so the below does not distinguish
- * strings, keywords, literals, etc. by design.
+ * strings, keywords, literals, etc. by designpattern.
  * From a discussion with the Go designers:
  * <pre>
  * On Thursday, July 22, 2010, Mike Samuel <...> wrote:

@@ -2411,7 +2411,7 @@ nv.models.boxPlotChart = function() {
     return chart;
 }
 
-// Chart design based on the recommendations of Stephen Few. Implementation
+// Chart designpattern based on the recommendations of Stephen Few. Implementation
 // based on the work of Clint Ivy, Jamie Love, and Jason Davies.
 // http://projects.instantcognition.com/protovis/bulletchart/
 
@@ -2646,7 +2646,7 @@ nv.models.bullet = function() {
 
 
 
-// Chart design based on the recommendations of Stephen Few. Implementation
+// Chart designpattern based on the recommendations of Stephen Few. Implementation
 // based on the work of Clint Ivy, Jamie Love, and Jason Davies.
 // http://projects.instantcognition.com/protovis/bulletchart/
 nv.models.bulletChart = function() {
