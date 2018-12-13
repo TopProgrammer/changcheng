@@ -4,4 +4,4 @@
 - 登陆中心服务changcheng-sso：开发中
 - 后台管理系统changcheng-admin：开发中
 - 博客系统changcheng-blog：产品设计中
-- 自定义插件chagncheng-plugin：学习中
+- 自定义插件chagncheng-plugin：学习中.
